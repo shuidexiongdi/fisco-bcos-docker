@@ -3,7 +3,7 @@
 FROM centos:7.3.1611
 
 # 维护者信息
-MAINTAINER dengjq "dengjq001@foersealife.com"
+MAINTAINER dengjq "dengjob@163.com"
 
 # install dependencies
 RUN yum install -y -q epel-release \
