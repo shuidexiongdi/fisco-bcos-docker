@@ -11,3 +11,6 @@
 节点身份文件（node/data）：network.rlp、network.rlp.pub
 配置文件（node/）：genesis.json、config.json、log.conf
 3. 节点启动脚本，根据node的实际情况提供的启动脚本
+
+由于大小限制，fisco-bcos-file目录下没有上传fisco-bcos可执行文件，可在网站下载源码编译成功后，拷贝到目录fisco-bcos-file下，源码地址：
+https://github.com/FISCO-BCOS/FISCO-BCOS
