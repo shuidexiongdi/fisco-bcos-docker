@@ -1,0 +1,14 @@
+version: '2'
+services:
+  create-node:
+    container_name: create-node
+    build:
+      context: ../container
+      dockerfile: Dockerfile
+    image: 10.60.248.41:5000/create-note-env:1.0
+    working_dir: /mydata/FISCO-BCOS/tool
+    volumes:
+      - ../source/FISCO-BCOS:/mydata/FISCO-BCOS
+      - ../output:/output
+    entrypoint: /docker-entrypoint.sh
+
