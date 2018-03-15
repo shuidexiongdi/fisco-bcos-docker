@@ -1,0 +1,18 @@
+version: '2'
+services:
+  fisco:
+    build:
+      context: ../container
+      dockerfile: Dockerfile
+    image: 10.60.248.41:5000/fisco-bcos-env:1.0
+    container_name: fisco-bcos
+    volumes: 
+      - ../node:/bcos-data
+      - ../log:/bcos-data/log
+    ports: 
+      - 8545:8545
+      - 30303:30303
+      - 30304:30304
+    entrypoint: /bcos-data/docker-entrypoint.sh
+
+
